@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>app agenda</title>
+</head>
+<body>
+    <div class="contenedor-primcipal">
+        <section class="form-contactos">
+            <header> 
+                <img src="img/icono contactos.jpg" alt="">
+            </header>
+        
+            <form action="#" class="contactos">
+                <label for="name">  Nombres</label>
+                <input id="name" type="text">
+        
+                <label for="correo">Correo</label>
+                <input type="text" id="gmail">
+        
+                <label for="celular">Celular</label>
+                <input id="celphone" type="text">
+        
+                <label for="descripcion">Descripcion</label>
+                <textarea name="descripcion" id="descripcion" ></textarea>
+        
+                <button id="save-btn">Guardar</button>
+            </form>
+            
+        </section>
+        <div class="lista">
+            <ul id="lista"></ul>
+        </div>
+        
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="js/datos.js"></script>
+</body>
+</html>
