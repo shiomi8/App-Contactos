@@ -16,7 +16,8 @@ let save_btn = document.getElementById("save-btn");
 let gmail_btn = document.getElementById("gmail");
 let descripcion_btn = document.getElementById("descripcion");
 let lista =  document.getElementById("lista");
-save_btn.addEventListener("click", () =>{
+save_btn.addEventListener("click", (event) =>{
+  event.preventDefault();
      let data = {
          nombre: nombre.value,
          correo: gmail_btn.value,
@@ -41,7 +42,7 @@ const save_data_firebase = (d) => {
 let contactos_arr = [];
 
 const get_data_firebase = () => {
-    contactos_arr = [];
+  contactos_arr = [];
     db.collection("contactos")
       .get()
       .then((querySnapshot) => {
